@@ -540,8 +540,8 @@ declare namespace SendBird {
     messageSurvivalSeconds: number;
     plugins: Array<Plugin>;
     isResendable(): boolean;
-    applyPollUpdateEvent(event: PollUpdateEvent);
-    applyPollVoteEvent(event: PollVoteEvent);
+    applyPollUpdateEvent(event: PollUpdateEvent): any;
+    applyPollVoteEvent(event: PollVoteEvent): any;
   }
   interface UserMessageStatic {
     buildFromSerializedData(serializedObject: Object): UserMessage;
